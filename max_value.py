@@ -24,8 +24,7 @@ def find_max_value(ran_nums):
 
 
 def main():
-    # initializing  sum and counter
-    sum = 0
+    # initializing counter
     counter = 0
 
     # declaring variable
@@ -40,7 +39,6 @@ def main():
     for counter in range(constants.MAX_ARRAY_SIZE):
         ran_nums_user.append(random.randint(constants.MIN_NUM,
                                             constants.MAX_NUM))
-        sum = sum + ran_nums_user[counter]
         print("{} added to the list at "
               "position {}" .format(ran_nums_user[counter], counter))
 
